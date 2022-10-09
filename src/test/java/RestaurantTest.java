@@ -73,11 +73,11 @@ class RestaurantTest {
     public void should_return_total_cost_of_selected_item(){
         int expectedAnswer = 388;
 
-        List<String> selectedItems = new ArrayList<>();
+        ArrayList<String> selectedItems = new ArrayList<>();
         selectedItems.add("Sweet corn soup");
         selectedItems.add("Vegetable lasagne");
-        
-        assertEquals(expectedAnswer, restaurant.calculateTotalcost(selectedItems));
+
+        assertEquals(expectedAnswer, restaurant.calculateTotalCost(selectedItems));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
